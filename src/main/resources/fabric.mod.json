@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "autotool",
+	"version": "${version}",
+	"name": "AutoTool",
+	"description": "Wechselt beim Abbauen automatisch auf das beste Werkzeug in der Hotbar (z.B. Axt für Holz, Spitzhacke für Stein).",
+	"authors": [
+		"Kevin Mueller"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/autotool/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"de.autotool.AutoToolClient"
+		]
+	},
+	"mixins": [
+		"autotool.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
